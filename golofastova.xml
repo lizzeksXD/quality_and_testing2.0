@@ -1,0 +1,246 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 OPR/128.0.0.0 (Edition Yx GX)" version="29.6.4">
+  <diagram name="Блок-схема управления услугами" id="flowchart-services">
+    <mxGraphModel dx="2703" dy="834" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="start" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=1" value="Начало работы с системой" vertex="1">
+          <mxGeometry height="40" width="160" x="480" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="auth-choice" parent="1" style="rhombus;whiteSpace=wrap;html=1;" value="Выбрать действие аутентификации" vertex="1">
+          <mxGeometry height="80" width="200" x="460" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="auth-login" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Вход в систему" vertex="1">
+          <mxGeometry height="40" width="120" x="240" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="auth-register" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Регистрация нового пользователя" vertex="1">
+          <mxGeometry height="40" width="160" x="480" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="auth-logout" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Выход из системы" vertex="1">
+          <mxGeometry height="40" width="120" x="750" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="role-check" parent="1" style="rhombus;whiteSpace=wrap;html=1;" value="Определение роли пользователя" vertex="1">
+          <mxGeometry height="80" width="200" x="460" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="admin-menu" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=1" value="Меню администратора" vertex="1">
+          <mxGeometry height="40" width="140" x="40" y="320" as="geometry" />
+        </mxCell>
+        <mxCell id="admin-action" parent="1" style="rhombus;whiteSpace=wrap;html=1;" value="Выбрать раздел управления" vertex="1">
+          <mxGeometry height="80" width="180" x="20" y="390" as="geometry" />
+        </mxCell>
+        <mxCell id="type-create" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Создать тип услуги&#xa;(название, цена, длительность)" vertex="1">
+          <mxGeometry height="50" width="150" x="250" y="405" as="geometry" />
+        </mxCell>
+        <mxCell id="type-edit" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Редактировать тип услуги" vertex="1">
+          <mxGeometry height="40" width="150" x="250" y="480" as="geometry" />
+        </mxCell>
+        <mxCell id="type-delete-check" parent="1" style="rhombus;whiteSpace=wrap;html=1;" value="Тип услуги используется?" vertex="1">
+          <mxGeometry height="60" width="140" x="450" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="type-delete-yes" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Невозможно удалить&#xa;(используется в услугах)" vertex="1">
+          <mxGeometry height="50" width="120" x="640" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="type-delete-no" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Удалить тип услуги" vertex="1">
+          <mxGeometry height="40" width="120" x="460" y="540" as="geometry" />
+        </mxCell>
+        <mxCell id="user-view" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Просмотр всех пользователей" vertex="1">
+          <mxGeometry height="40" width="150" x="-220" y="600" as="geometry" />
+        </mxCell>
+        <mxCell id="user-assign" parent="1" style="rhombus;whiteSpace=wrap;html=1;" value="Выбрать пользователя и роль" vertex="1">
+          <mxGeometry height="70" width="140" x="-10" y="585" as="geometry" />
+        </mxCell>
+        <mxCell id="user-master" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Назначить роль мастера" vertex="1">
+          <mxGeometry height="40" width="120" x="-110" y="820" as="geometry" />
+        </mxCell>
+        <mxCell id="user-admin" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Назначить роль администратора" vertex="1">
+          <mxGeometry height="40" width="140" x="-110" y="705" as="geometry" />
+        </mxCell>
+        <mxCell id="user-remove" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Снять роль мастера" vertex="1">
+          <mxGeometry height="40" width="120" x="-110" y="760" as="geometry" />
+        </mxCell>
+        <mxCell id="user-delete" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Удалить пользователя" vertex="1">
+          <mxGeometry height="40" width="120" x="90" y="700" as="geometry" />
+        </mxCell>
+        <mxCell id="stats-menu" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=1" value="Просмотр статистики" vertex="1">
+          <mxGeometry height="40" width="140" x="-70" y="500" as="geometry" />
+        </mxCell>
+        <mxCell id="master-menu" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=1" value="Меню мастера" vertex="1">
+          <mxGeometry height="40" width="120" x="980" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="master-action" parent="1" style="rhombus;whiteSpace=wrap;html=1;" value="Выбрать действие с услугами" vertex="1">
+          <mxGeometry height="70" width="160" x="960" y="430" as="geometry" />
+        </mxCell>
+        <mxCell id="service-create" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Создание записи об услуге" vertex="1">
+          <mxGeometry height="40" width="150" x="790" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="service-type-select" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Выбрать типы услуг&#xa;(из существующих)" vertex="1">
+          <mxGeometry height="50" width="150" x="790" y="580" as="geometry" />
+        </mxCell>
+        <mxCell id="service-save" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Сохранить запись об услуге" vertex="1">
+          <mxGeometry height="40" width="150" x="790" y="665" as="geometry" />
+        </mxCell>
+        <mxCell id="service-list" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Просмотр списка услуг" vertex="1">
+          <mxGeometry height="40" width="140" x="970" y="540" as="geometry" />
+        </mxCell>
+        <mxCell id="service-filter" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Применить фильтрацию" vertex="1">
+          <mxGeometry height="40" width="140" x="970" y="620" as="geometry" />
+        </mxCell>
+        <mxCell id="service-edit" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Редактировать услугу" vertex="1">
+          <mxGeometry height="40" width="120" x="1150" y="540" as="geometry" />
+        </mxCell>
+        <mxCell id="service-delete" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Удалить услугу" vertex="1">
+          <mxGeometry height="40" width="120" x="1150" y="394" as="geometry" />
+        </mxCell>
+        <mxCell id="conn-start-auth" edge="1" parent="1" source="start" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;" target="auth-choice">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="conn-auth-login" edge="1" parent="1" source="auth-choice" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;" target="auth-login">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="300" y="190" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="conn-auth-reg" edge="1" parent="1" source="auth-choice" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;" target="auth-register">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="conn-auth-out" edge="1" parent="1" source="auth-choice" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;" target="auth-logout">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="conn-login-role" edge="1" parent="1" source="auth-login" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;" target="role-check">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="conn-reg-role" edge="1" parent="1" source="auth-register" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;" target="role-check">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="conn-role-admin" edge="1" parent="1" source="role-check" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;" target="admin-menu">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="130" y="340" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="conn-role-master" edge="1" parent="1" source="role-check" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;" target="master-menu">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1040" y="340" />
+            </Array>
+            <mxPoint x="920" y="340" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="conn-admin-action" edge="1" parent="1" source="admin-menu" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;" target="admin-action">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="conn-action-type" edge="1" parent="1" source="admin-action" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;" target="type-create">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="240" y="430" />
+              <mxPoint x="240" y="430" />
+            </Array>
+            <mxPoint x="335" y="530" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="conn-type-edit" edge="1" parent="1" source="type-create" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;" target="type-edit">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="conn-type-delete-check" edge="1" parent="1" source="type-edit" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;" target="type-delete-check">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="conn-check-yes" edge="1" parent="1" source="type-delete-check" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;" target="type-delete-yes">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="580" y="550" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="conn-check-no" edge="1" parent="1" source="type-delete-check" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;" target="type-delete-no">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="conn-action-user" edge="1" parent="1" source="admin-action" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;" target="user-view">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="335" y="680" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="conn-user-assign" edge="1" parent="1" source="user-view" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;" target="user-assign">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="conn-assign-master" edge="1" parent="1" source="user-assign" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;" target="user-master">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="60" y="840" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="conn-assign-admin" edge="1" parent="1" source="user-assign" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;" target="user-admin">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="60" y="725" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="conn-assign-remove" edge="1" parent="1" source="user-assign" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;" target="user-remove">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="60" y="780" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="conn-assign-delete" edge="1" parent="1" source="user-assign" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;" target="user-delete">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="150" y="620" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="conn-action-stats" edge="1" parent="1" source="admin-action" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;" target="stats-menu">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="110" y="490" />
+              <mxPoint y="490" />
+            </Array>
+            <mxPoint x="850" y="530" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="conn-master-action" edge="1" parent="1" source="master-menu" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;" target="master-action">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="conn-master-create" edge="1" parent="1" source="master-action" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;" target="service-create">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="conn-create-type" edge="1" parent="1" source="service-create" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;" target="service-type-select">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="conn-type-save" edge="1" parent="1" source="service-type-select" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="865" y="650" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="conn-master-list" edge="1" parent="1" source="master-action" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;" target="service-list">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="conn-list-filter" edge="1" parent="1" source="service-list" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;" target="service-filter">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="conn-master-edit" edge="1" parent="1" source="master-action" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;" target="service-edit">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="conn-master-delete" edge="1" parent="1" source="master-action" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;" target="service-delete">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="return-admin" edge="1" parent="1" source="type-delete-no" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;dashed=1;fontColor=#666666;" target="admin-action" value="к меню администратора">
+          <mxGeometry relative="1" x="0.061" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="520" y="610" />
+              <mxPoint x="170" y="610" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="return-master" edge="1" parent="1" source="service-save" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;dashed=1;fontColor=#666666;" target="master-action" value="к меню мастера">
+          <mxGeometry relative="1" x="0.6758" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="865" y="725" />
+              <mxPoint x="780" y="725" />
+              <mxPoint x="780" y="455" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
